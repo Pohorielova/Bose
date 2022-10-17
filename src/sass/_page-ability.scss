@@ -1,0 +1,45 @@
+.page-ability__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #E7E7E7;
+    margin-bottom: 32px;
+}
+
+.container {
+    width: 280px;
+    height: 296px;
+}
+
+.page-ability__list {
+    @extend %list;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-ability__item {
+    position: relative;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
+    margin-left: 57px;
+
+}
+
+.page-ability__item::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #DF3D3A;
+    border-radius: 10px;
+    left: 20px;
+}
