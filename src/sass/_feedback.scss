@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  // padding: 18px;
+  padding: 18px;
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     // padding-left: 62px;
@@ -116,6 +116,7 @@
   }
 
   &__link {
+    display: flex;
     margin-left: 5px;
 
     color: #ffffffcc;
@@ -145,16 +146,26 @@
     &:checked + .feedback__check {
       content: ' ';
       // background-image: url('../images/icon-check.svg');
+      background-image: url('../images/check-true.svg');
 
-      border: 2px solid green;
+      width: 33px;
+      height: 31px;
+
+      margin-right: 21px;
+      margin-top: 0;
     }
   }
   &__check {
+    margin-top: 3px;
+
     width: 30px;
     height: 28px;
 
+    background-image: url('../images/check-false.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
     margin-right: 24px;
-    border: 2px solid #e9edfa;
   }
 
   &__button {
@@ -178,4 +189,7 @@ input:-webkit-autofill:focus {
 
   -webkit-box-shadow: 0 0 0px 1000px $bcg-color inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+input:hover::-webkit-input-placeholder {
+  color: #ffffffcc;
 }
