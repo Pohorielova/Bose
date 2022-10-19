@@ -88,7 +88,7 @@
     padding: 0;
     padding-bottom: 16px;
 
-    border: 1px solid transparent;
+    border: 2px solid $bcg-color;
     border-bottom: 2px solid $primary-text-color;
 
     color: $primary-text-color;
@@ -103,6 +103,7 @@
     &:hover,
     &:focus {
       outline-style: none;
+
       border-bottom: 2px solid $accent-color;
     }
   }
@@ -178,4 +179,36 @@ input:-webkit-autofill:focus {
 }
 input:hover::-webkit-input-placeholder {
   color: $primary-text-color;
+}
+
+input,
+input:valid {
+  color: $primary-text-color;
+  outline-style: none;
+  background-color: $bcg-color;
+  border: 2px solid $bcg-color;
+  border-bottom: 2px solid $primary-text-color;
+  padding: 0 0 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  &:hover {
+    border-bottom: 2px solid $accent-color;
+  }
+}
+
+input.invalid {
+  color: transparent;
+  background-color: $bcg-color;
+  border: 2px solid $bcg-color;
+  border-bottom: 2px solid $accent-color;
+}
+
+#notify {
+  color: $accent-color;
+
+  position: absolute;
+}
+#notify.error {
+  background-color: $bcg-color;
 }

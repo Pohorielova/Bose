@@ -7,28 +7,43 @@
       </p>
     </div>
 
+    <!-- <form id="form" class="position">
+      <div >
+        <input
+          name="username"
+          type="text"
+          placeholder="Username"
+          pattern="[a-z]{1,15}"
+          id="username"
+          minlength="4"
+          required
+        />
+    </form> -->
+
     <form class="feedback__label--margin">
-      <label class="feedback__field" for="input-name">
+      <div id="form" class="feedback__field">
         <input
           class="feedback__form"
           placeholder="Your name"
           type="text"
-          name="name"
+          name="username"
+          pattern="[a-Z]{1,15}"
+          minlength="2"
           required
-          id="input-name"
-          minlength="4"
+          id="username"
         />
-      </label>
-      <label class="feedback__field" for="input-email">
+      </div>
+      <div id="form-2" class="feedback__field" for="email">
         <input
           class="feedback__form"
           placeholder="Your e-mail"
           type="email"
           name="email"
           required
-          id="input-email"
+          id="email"
+          minlength="4"
         />
-      </label>
+      </div>
       <label class="feedback__field" for="input-massage">
         <textarea
           class="feedback__form feedback__area"
