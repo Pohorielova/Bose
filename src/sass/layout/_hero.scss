@@ -55,14 +55,12 @@ color: $primary-text-color;
 .wrapper-hero {
     @media screen and (min-width:768px) {
         display: flex;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         margin-left: 35px;
     }
-    @media screen and (min-width:1440px) {
-
-      padding-bottom: 85px;
-
-  }
+//     @media screen and (min-width:1440px) {
+//       padding-bottom: 85px;
+//   }
 }
 
 .hero-btn {
@@ -113,10 +111,19 @@ color: $primary-text-color;
 }
 }
 
-.container--hero {
-    @media screen and (min-width:1440px){
-        // padding-bottom: 85px;
-        display: block;
-        // height: 690px;
+// .container--hero {
+//     @media screen and (min-width:1440px){
+//         // padding-bottom: 85px;
+//         display: block;
+//         // height: 690px;
+//     }
+// }
+
+.section-hero{
+    @extend %section;
+    height: 770px;
+    display: block;
+    @media screen and (min-width:1440px) {
+        padding-top: 20px;
     }
 }
