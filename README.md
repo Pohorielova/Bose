@@ -12,7 +12,7 @@ responsive design.
 - **Product Listings**: Browse through a variety of Bose products.
 - **Product Details**: View detailed information about each product, including
   specifications and pricing.
-- **Responsive Design**: The site is fully responsive and works well on all
+- **Responsive Design**: The web app is fully responsive and works well on all
   devices.
 - **Interactive UI**: Smooth and interactive user interface for a great user
   experience.
@@ -22,8 +22,6 @@ responsive design.
 - **HTML5**: For the structure of the web pages.
 - **CSS3**: For styling the web pages, including flexbox and grid for layout.
 - **JavaScript**: For adding interactivity to the site.
-- **jQuery**: For simplified DOM manipulation.
-- **Bootstrap**: For responsive design and components.
 - **SASS**: For more efficient and organized CSS.
 
 ## Project Setup
